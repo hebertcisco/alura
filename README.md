@@ -14,7 +14,7 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 **Mobile:**
 
-- ...
+- [Android parte 1: crie um app mobile](https://cursos.alura.com.br/course/android-sua-primeira-app-mobile)
 
 **Back-end:**
 
