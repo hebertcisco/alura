@@ -19,6 +19,11 @@
 		<testcontainers.version>1.17.2</testcontainers.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.jetbrains.kotlinx</groupId>
+			<artifactId>kotlinx-coroutines-reactor</artifactId>
+			<version>1.6.0</version> <!-- Use the latest version available -->
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retrofit -->
 		<dependency>
 			<groupId>io.github.resilience4j</groupId>

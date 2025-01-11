@@ -2,6 +2,7 @@ package br.com.car.adapters.bd
 
 import br.com.car.domain.model.Car
 import br.com.car.domain.ports.CarRepository
+import kotlinx.coroutines.coroutineScope
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.stereotype.Repository
 
@@ -32,4 +33,12 @@ class CarRepository(
     )
 
     override fun findById(id: Long): Car? = jdbcTemplate.queryForObject("SELECT * FROM car WHERE id = ?", CarMapper(), id)
+
+    override suspend fun listByInventory(model: String?): List<Car>? = coroutineScope {
+        if (model != null) {
+            jdbcTemplate.query("SELECT * FROM car WHERE model = ? AND is_eligible = true", CarMapper(), model)
+        } else {
+            jdbcTemplate.query("SELECT * FROM car WHERE is_eligible = true", CarMapper())
+        }
+    }
 }
