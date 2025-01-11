@@ -2,6 +2,7 @@ package br.com.car
 
 import br.com.car.core.service.CarService
 import br.com.car.domain.ports.CarRepository
+import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 import io.mockk.every
@@ -43,12 +44,19 @@ class CarServiceTest : FunSpec({
         actual shouldBe car
     }
 
+    test("should throw a exception when not found car by id") {
+        every { carRepository.findById(1) } returns null
+
+        shouldThrow<RuntimeException> {
+            carService.findById(1)
+        }
+    }
+
     test("should save a car") {
         val actual = carService.save(car)
 
         actual shouldBe 0
     }
-
 
     test("should update a car") {
         val actual = carService.update(car, 1)
