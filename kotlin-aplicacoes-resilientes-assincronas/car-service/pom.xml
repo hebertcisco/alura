@@ -19,6 +19,14 @@
 		<testcontainers.version>1.17.2</testcontainers.version>
 	</properties>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.kotest/kotest-runner-junit5-jvm -->
+		<dependency>
+			<groupId>io.kotest</groupId>
+			<artifactId>kotest-runner-junit5-jvm</artifactId>
+			<version>5.9.1</version>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.jetbrains.kotlinx</groupId>
 			<artifactId>kotlinx-coroutines-reactor</artifactId>
@@ -30,7 +38,6 @@
 			<artifactId>resilience4j-retrofit</artifactId>
 			<version>1.7.1</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-circuitbreaker -->
 		<dependency>
 			<groupId>io.github.resilience4j</groupId>
@@ -55,7 +62,6 @@
 			<artifactId>spring-boot-starter-cache</artifactId>
 			<version>3.4.1</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -92,7 +98,6 @@
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib-jdk8</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -113,7 +118,6 @@
 			<artifactId>mysql</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.mockk/mockk -->
 		<dependency>
 			<groupId>io.mockk</groupId>
@@ -126,7 +130,6 @@
 			<artifactId>kotlinx-coroutines-core</artifactId>
 			<version>1.6.4</version>
 		</dependency>
-
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -146,7 +149,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
 		<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
