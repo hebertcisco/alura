@@ -5,8 +5,9 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 ## Referência e cursos
 
 - [Kotlin:  aplicações resilientes e assíncronas](https://www.alura.com.br/curso-online-kotlin-aplicacoes-resilientes-assincronas)
+- [Android parte 1: crie um app mobile](https://cursos.alura.com.br/course/android-sua-primeira-app-mobile)
 
-## Stacks estudadas
+## Stacks estudadas e projetos
 
 **Front:**
 
@@ -14,8 +15,8 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 **Mobile:**
 
-- [Android parte 1: crie um app mobile](https://cursos.alura.com.br/course/android-sua-primeira-app-mobile)
+- [agenda: Android + Java + XML](/android-sua-primeira-app-mobile/agenda/)
 
 **Back-end:**
 
-- [Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/kotlin-aplicacoes-resilientes-assincronas/car-service)
+- [car-service: Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/kotlin-aplicacoes-resilientes-assincronas/car-service)
