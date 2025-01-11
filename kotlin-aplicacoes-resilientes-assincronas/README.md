@@ -19,4 +19,4 @@ Pude aprender como usar o `suspend` do Kotlin, eu tinha essa curiosidade de como
 
 ### Testes com Kotest
 
-Conheci a lib [Kotest](https://kotest.io/), que é uma alternativa ao JUnit, e gostei bastante da forma de escrever os testes, achei mais limpo e organizado. Também conheci o pluguin [kotest pro IntelliJ](https://kotest.io/docs/intellij/intellij-plugin.html) que facilita a execução dos testes.
+Conheci a lib [Kotest](https://kotest.io/), que é uma alternativa ao JUnit, e gostei bastante da forma de escrever os testes, achei mais limpo e organizado. Também conheci o pluguin [kotest pro IntelliJ](https://kotest.io/docs/intellij/intellij-plugin.html) que facilita a execução dos testes. Além disso, aprendi como utilizar o `Mockk` para fazer os mocks dos objetos, que é uma alternativa ao `Mockito`.

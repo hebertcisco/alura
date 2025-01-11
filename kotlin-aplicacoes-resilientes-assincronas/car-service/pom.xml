@@ -19,6 +19,12 @@
 		<testcontainers.version>1.17.2</testcontainers.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>io.mockk</groupId>
+			<artifactId>mockk</artifactId>
+			<version>1.9.3</version>
+			<scope>test</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.kotest/kotest-runner-junit5-jvm -->
 		<dependency>
 			<groupId>io.kotest</groupId>
