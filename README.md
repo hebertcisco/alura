@@ -4,8 +4,8 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 ## Referência e cursos
 
-- [Kotlin:  aplicações resilientes e assíncronas](https://www.alura.com.br/curso-online-kotlin-aplicacoes-resilientes-assincronas)
-- [Android parte 1: crie um app mobile](https://cursos.alura.com.br/course/android-sua-primeira-app-mobile)
+- [Kotlin:  aplicações resilientes e assíncronas](/kotlin-aplicacoes-resilientes-assincronas/)
+- [Android parte 1: crie um app mobile](/android-sua-primeira-app-mobile/)
 
 ## Stacks estudadas e projetos
 

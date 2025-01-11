@@ -1,7 +1,7 @@
 
 # Kotlin: aplicações resilientes e assíncronas
 
-Aprendizado do curso Kotlin: aplicações resilientes e assíncronas da Alura.
+Aprendizado do curso [Kotlin:  aplicações resilientes e assíncronas](https://www.alura.com.br/curso-online-kotlin-aplicacoes-resilientes-assincronas) da Alura.
 
 ## Aprendizados
 

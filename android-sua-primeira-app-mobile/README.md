@@ -1,6 +1,6 @@
 # Android parte 1: crie um app mobile
 
-Aprendizado do curso `Android parte 1: crie um app mobile` da Alura.
+Aprendizado do curso [Android parte 1: crie um app mobile](https://cursos.alura.com.br/course/android-sua-primeira-app-mobile) da Alura.
 
 ## Aprendizados
 
