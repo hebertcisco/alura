@@ -18,4 +18,4 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 **Back-end:**
 
-- Kotlin + Spring Boot + Retrofit + resilience4j + Kotest
+- [Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/kotlin-aplicacoes-resilientes-assincronas/car-service)
