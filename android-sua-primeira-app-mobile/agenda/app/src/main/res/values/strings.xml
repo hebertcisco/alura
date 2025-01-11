@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Alura Agenda</string>
+    <string name="activity_student_list_fab_new_student_description">Button to add a new student</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="e_mail">E-mail</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
 </resources>
