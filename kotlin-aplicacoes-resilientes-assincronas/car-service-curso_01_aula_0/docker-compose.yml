@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  mysql:
+    image: mysql:8.0.26
+    environment:
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD:-root}'
+      MYSQL_DATABASE: '${MYSQL_DATABASE:-car}'
+      MYSQL_PASSWORD: '${MYSQL_PASSWORD:-root}'
+    ports:
+        - '${MYSQL_PORT:-3306}:3306'
+  redis:
+    image: redis:bullseye
+    ports:
+         - '${REDIS_PORT:-6379}:6379'
