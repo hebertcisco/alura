@@ -79,11 +79,16 @@ public class CarListActivity extends AppCompatActivity {
 
                             Car car = getItem(position);
 
-                            TextView name = convertView.findViewById(R.id.item_student_name);
+                            TextView name = convertView.findViewById(R.id.item_car_name);
+                            TextView model = convertView.findViewById(R.id.item_car_model);
+                            TextView year = convertView.findViewById(R.id.item_car_year);
+                            Button deleteButton = convertView.findViewById(R.id.item_car_delete);
+
                             assert car != null;
                             name.setText(car.getName());
+                            model.setText(car.getModel());
+                            year.setText(String.valueOf(car.getYear()));
 
-                            Button deleteButton = convertView.findViewById(R.id.item_student_delete);
                             deleteButton.setOnClickListener(view -> showDeleteConfirmationDialog(car));
 
                             return convertView;
