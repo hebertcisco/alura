@@ -16,10 +16,6 @@ public class CarApiHttpConfiguration {
         if (context == null) {
             throw new IllegalArgumentException("Context is required");
         }
-        Log.d("CarApiHttpConfiguration", "Base URL: " + context.getString(R.string.api_url));
-        if (context.getString(R.string.api_url).isEmpty()) {
-            throw new IllegalArgumentException("Base URL is required");
-        }
         this.baseUrl = context.getString(R.string.api_url);
     }
 
