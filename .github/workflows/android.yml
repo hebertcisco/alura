@@ -23,17 +23,13 @@ jobs:
     - name: Build with Gradle
       run: cd android-sua-primeira-app-mobile/agenda && ./gradlew assembleRelease --no-daemon
     
-    - name: Grant execute permission for gradlew
-      run: cd android-avancando-listeners-menu-ui/agenda && chmod +x gradlew
-    - name: Build with Gradle
-      run: cd android-avancando-listeners-menu-ui/agenda && ./gradlew assembleRelease --no-daemon
-    
-    - name: Grant execute permission for gradlew
-      run: cd android-refinando-o-projeto/agenda && chmod +x gradlew
-    - name: Build with Gradle
-      run: cd android-refinando-o-projeto/agenda && ./gradlew assembleRelease --no-daemon      
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: agenda-apk
+        path: android-sua-primeira-app-mobile/agenda/app/build/outputs/apk/release/*.apk
 
-  build-car:
+  build-agenda-v2:
     runs-on: ubuntu-24.04
 
     steps:
@@ -45,10 +41,36 @@ jobs:
         distribution: 'temurin'
         cache: gradle
     
-    - name: Create local.properties
-      run: echo "api_url=http://example.app" > android-sua-primeira-app-mobile/Car/local.properties
+    - name: Grant execute permission for gradlew
+      run: cd android-avancando-listeners-menu-ui/agenda && chmod +x gradlew
+    - name: Build with Gradle
+      run: cd android-avancando-listeners-menu-ui/agenda && ./gradlew assembleRelease --no-daemon
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: agenda-v2-apk
+        path: android-avancando-listeners-menu-ui/agenda/app/build/outputs/apk/release/*.apk
+
+  build-agenda-v3:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
     
     - name: Grant execute permission for gradlew
-      run: cd android-sua-primeira-app-mobile/Car && chmod +x gradlew
+      run: cd android-refinando-o-projeto/agenda && chmod +x gradlew
     - name: Build with Gradle
-      run: cd android-sua-primeira-app-mobile/Car && ./gradlew assembleRelease --no-daemon
+      run: cd android-refinando-o-projeto/agenda && ./gradlew assembleRelease --no-daemon
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: agenda-v3-apk
+        path: android-refinando-o-projeto/agenda/app/build/outputs/apk/release/*.apk        
