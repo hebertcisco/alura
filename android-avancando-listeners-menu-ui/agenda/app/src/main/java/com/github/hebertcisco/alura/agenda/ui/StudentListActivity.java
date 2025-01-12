@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -14,10 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.github.hebertcisco.alura.agenda.R;
 import com.github.hebertcisco.alura.agenda.dao.StudentDAO;
 import com.github.hebertcisco.alura.agenda.model.Student;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
 
 public class StudentListActivity extends AppCompatActivity {
@@ -66,10 +67,11 @@ public class StudentListActivity extends AppCompatActivity {
                 TextView name = convertView.findViewById(R.id.item_student_name);
                 name.setText(student.getName());
 
-                Button deleteButton = convertView.findViewById(R.id.item_student_delete);
-                deleteButton.setOnClickListener(view -> showDeleteConfirmationDialog(student));
-
                 convertView.setOnClickListener(view -> openStudentFormWithStudent(student));
+                convertView.setOnLongClickListener(view -> {
+                    showDeleteConfirmationDialog(student);
+                    return true;
+                });
 
                 return convertView;
             }
