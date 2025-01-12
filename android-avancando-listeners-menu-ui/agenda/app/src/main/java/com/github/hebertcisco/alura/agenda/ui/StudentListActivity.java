@@ -34,6 +34,7 @@ public class StudentListActivity extends AppCompatActivity {
         setTitle(TITLE_APPBAR);
         dao.loadFromPreferences();
         configureFabNewStudent();
+        configureList();
     }
 
     private void configureFabNewStudent() {
@@ -48,13 +49,12 @@ public class StudentListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        configureList();
+        updateList();
     }
 
     private void configureList() {
         ListView studentList = findViewById(R.id.activity_student_list_listview);
-        List<Student> students = dao.all();
-        adapter = new ArrayAdapter<Student>(this, 0, students) {
+        adapter = new ArrayAdapter<Student>(this, 0, dao.all()) {
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -77,6 +77,12 @@ public class StudentListActivity extends AppCompatActivity {
             }
         };
         studentList.setAdapter(adapter);
+    }
+
+    private void updateList() {
+        adapter.clear();
+        adapter.addAll(dao.all());
+        adapter.notifyDataSetChanged();
     }
 
     private void openStudentFormWithStudent(Student student) {
