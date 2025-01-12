@@ -36,10 +36,11 @@ public class StudentFormActivity extends AppCompatActivity {
         configureFabSaveStudent();
 
         Intent intent = getIntent();
-        if (intent.hasExtra("student")) {
+        if (intent != null && intent.hasExtra("student")) {
             student = (Student) intent.getSerializableExtra("student");
-            assert student != null;
-            fillFields(student);
+            if (student != null) {
+                fillFields(student);
+            }
         }
     }
 
