@@ -6,8 +6,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  build-agenda:
     runs-on: ubuntu-24.04
 
     steps:
@@ -19,7 +18,24 @@ jobs:
         distribution: 'temurin'
         cache: gradle
     
-    - name: (android-sua-primeira-app-mobile/agenda) Grant execute permission for gradlew
+    - name: Grant execute permission for gradlew
       run: cd android-sua-primeira-app-mobile/agenda && chmod +x gradlew
-    - name: (android-sua-primeira-app-mobile/agenda) Build with Gradle
+    - name: Build with Gradle
       run: cd android-sua-primeira-app-mobile/agenda && ./gradlew assembleRelease --no-daemon
+
+  build-car:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+    
+    - name: Grant execute permission for gradlew
+      run: cd android-sua-primeira-app-mobile/Car && chmod +x gradlew
+    - name: Build with Gradle
+      run: cd android-sua-primeira-app-mobile/Car && ./gradlew assembleRelease --no-daemon
