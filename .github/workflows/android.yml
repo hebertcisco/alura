@@ -22,7 +22,16 @@ jobs:
       run: cd android-sua-primeira-app-mobile/agenda && chmod +x gradlew
     - name: Build with Gradle
       run: cd android-sua-primeira-app-mobile/agenda && ./gradlew assembleRelease --no-daemon
-
+    
+    - name: Grant execute permission for gradlew
+      run: cd android-avancando-listeners-menu-ui/agenda && chmod +x gradlew
+    - name: Build with Gradle
+      run: cd android-avancando-listeners-menu-ui/agenda && ./gradlew assembleRelease --no-daemon
+    
+    - name: Grant execute permission for gradlew
+      run: cd android-refinando-o-projeto/agenda && chmod +x gradlew
+    - name: Build with Gradle
+      run: cd android-refinando-o-projeto/agenda && ./gradlew assembleRelease --no-daemon      
   build-car:
     runs-on: ubuntu-24.04
 
@@ -39,3 +48,6 @@ jobs:
       run: cd android-sua-primeira-app-mobile/Car && chmod +x gradlew
     - name: Build with Gradle
       run: cd android-sua-primeira-app-mobile/Car && ./gradlew assembleRelease --no-daemon
+
+    
+      
