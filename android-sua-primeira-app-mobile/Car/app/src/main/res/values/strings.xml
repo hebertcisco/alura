@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Car App</string>
+    <string name="name">Name</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="save">Save</string>
+    <string name="activity_car_list_fab_new_car_description">Create new car</string>
+    <string name="delete">Delete</string>
+</resources>
