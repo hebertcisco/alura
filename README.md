@@ -6,10 +6,10 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 ## Referência e cursos
 
-- [Kotlin:  aplicações resilientes e assíncronas](/kotlin-aplicacoes-resilientes-assincronas/)
-- [Android parte 1: crie um app mobile](/android-sua-primeira-app-mobile/)
-- [Android parte 2: avançando com listeners, menu e UI](/android-avancando-listeners-menu-ui/)
-- [Android parte 3: refinando o projeto](/android-refinando-o-projeto/)
+- [Kotlin:  aplicações resilientes e assíncronas](backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas)
+- [Android parte 1: crie um app mobile](mobile/android/android-sua-primeira-app-mobile)
+- [Android parte 2: avançando com listeners, menu e UI](mobile/android/android-avancando-listeners-menu-ui/)
+- [Android parte 3: refinando o projeto](mobile/android/android-refinando-o-projeto/)
 
 ## Stacks estudadas e projetos
 
@@ -19,11 +19,11 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 **Mobile:**
 
-- [agenda: Android + Java + XML](/android-sua-primeira-app-mobile/agenda/)
-- [agenda v2: Android + Java + XML](/android-avancando-listeners-menu-ui/agenda/)
-- [agenda v3: Android + Java + XML](/android-refinando-o-projeto/agenda/)
-- [car-app: Android + Java + XML](/android-sua-primeira-app-mobile/Car/)
+- [agenda: Android + Java + XML](mobile/android/android-sua-primeira-app-mobile/agenda/)
+- [agenda v2: Android + Java + XML](mobile/android/android-avancando-listeners-menu-ui/agenda/)
+- [agenda v3: Android + Java + XML](mobile/android/android-refinando-o-projeto/agenda/)
+- [car-app: Android + Java + XML](mobile/android/android-sua-primeira-app-mobile/Car/)
 
 **Back-end:**
 
-- [car-service: Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/kotlin-aplicacoes-resilientes-assincronas/car-service)
+- [car-service: Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/)
