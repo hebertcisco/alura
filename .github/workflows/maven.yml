@@ -1,0 +1,21 @@
+name: Maven CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build alugames with Maven
+      run: cd backend/jvm/kotlin/kotlin-desenvolvendo-primeira-aplicacao/alugames/ && mvn -B package --file pom.xml
