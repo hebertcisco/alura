@@ -7,6 +7,7 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 ## Referência e cursos
 
+- [Kotlin: desenvolvendo sua primeira aplicação](backend/jvm/kotlin/kotlin-desenvolvendo-primeira-aplicacao/)
 - [Kotlin:  aplicações resilientes e assíncronas](backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas)
 - [Android parte 1: crie um app mobile](mobile/android/android-sua-primeira-app-mobile)
 - [Android parte 2: avançando com listeners, menu e UI](mobile/android/android-avancando-listeners-menu-ui/)
@@ -27,4 +28,5 @@ Este repositório contém os projetos desenvolvidos durante os estudos na plataf
 
 **Back-end:**
 
-- [car-service: Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/)
+- [car-service: Kotlin + Spring Boot + Retrofit + resilience4j + Kotest](/backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/car-service/)
+- [alugames: Kotlin](/backend/jvm/kotlin/kotlin-desenvolvendo-primeira-aplicacao/alugames/)
