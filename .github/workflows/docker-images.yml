@@ -1,0 +1,17 @@
+name: Docker Images CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the car-service Docker image
+      run: cd backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/car-service/ && docker build . --file Dockerfile --tag car-service:$(date +%s)
