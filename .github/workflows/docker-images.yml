@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the car-service Docker image
-      run: cd backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/car-service/ && docker build . --file Dockerfile --tag car-service:$(date +%s)
+      run: docker build ./backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/car-service/ --file Dockerfile --tag car-service:$(date +%s)
