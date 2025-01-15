@@ -17,8 +17,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build car-servic with Maven
-      run: cd backend/jvm/kotlin/kotlin-aplicacoes-resilientes-assincronas/car-service/ && mvn -B package --file pom.xml
-
     - name: Build alugames with Maven
       run: cd backend/jvm/kotlin/kotlin-desenvolvendo-primeira-aplicacao/alugames/ && mvn -B package --file pom.xml
